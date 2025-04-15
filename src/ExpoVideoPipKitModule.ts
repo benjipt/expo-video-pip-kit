@@ -1,12 +1,10 @@
-import { NativeModule, requireNativeModule } from 'expo';
+import { NativeModule, requireNativeModule } from "expo";
 
-import { ExpoVideoPipKitModuleEvents } from './ExpoVideoPipKit.types';
-
-declare class ExpoVideoPipKitModule extends NativeModule<ExpoVideoPipKitModuleEvents> {
-  PI: number;
-  hello(): string;
-  setValueAsync(value: string): Promise<void>;
+declare class ExpoVideoPipKitModule extends NativeModule {
+  getApiKey(): string;
 }
 
 // This call loads the native module object from the JSI.
-export default requireNativeModule<ExpoVideoPipKitModule>('ExpoVideoPipKit');
+export default requireNativeModule<ExpoVideoPipKitModule>(
+  "ExpoNativeConfiguration",
+);
