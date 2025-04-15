@@ -1,5 +1,3 @@
-import ExpoVideoKitModule from "./ExpoVideoPipKitModule";
+import ExpoVideoPipKit from "./ExpoVideoPipKitModule";
 
-export function getApiKey(): string {
-  return ExpoVideoKitModule.getApiKey();
-}
+export default ExpoVideoPipKit;
