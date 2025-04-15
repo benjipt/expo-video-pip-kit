@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-video-pip-kit": ["../src/index"],
+      "expo-video-pip-kit/*": ["../src/*"]
+    }
+  }
+}
